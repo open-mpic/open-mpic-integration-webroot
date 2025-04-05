@@ -14,7 +14,20 @@ server {
        rewrite ^/.well-known/acme-challenge/evaGxfADs6pSRb2LAv9IZf17Dt3juxGJ-PCt92wr-oB$ http://integration-testing.open-mpic.org/redirect-target redirect;
        rewrite ^/.well-known/pki-validation/validation-doc-redirect.txt$ http://integration-testing.open-mpic.org/redirect-target-website-change redirect;
        rewrite ^/.well-known/pki-validation/validation-doc-bad-port-redirect.txt$ http://integration-testing.open-mpic.org:8080/redirect-target-website-change redirect;
-rewrite ^/.well-known/acme-challenge/evaGxfADs6pSRb2LAv9IZf17Dt3juxGJ-PCt92wr-oC$ http://integration-testing.open-mpic.org:8080/redirect-target redirect;
+	rewrite ^/.well-known/acme-challenge/evaGxfADs6pSRb2LAv9IZf17Dt3juxGJ-PCt92wr-oC$ http://integration-testing.open-mpic.org:8080/redirect-target redirect;
 
+
+	 rewrite ^/.well-known/pki-validation/validation-long-redirect.txt$ http://integration-testing.open-mpic.org/redirect-target-1 redirect;
+	rewrite ^/redirect-target-1$ http://integration-testing.open-mpic.org/redirect-target-2 redirect;
+	rewrite ^/redirect-target-2$ http://integration-testing.open-mpic.org/redirect-target-3 redirect;
+	rewrite ^/redirect-target-3$ http://integration-testing.open-mpic.org/redirect-target-4 redirect;
+	rewrite ^/redirect-target-4$ http://integration-testing.open-mpic.org/redirect-target-5 redirect;
+	rewrite ^/redirect-target-5$ http://integration-testing.open-mpic.org/redirect-target-6 redirect;
+	rewrite ^/redirect-target-6$ http://integration-testing.open-mpic.org/redirect-target-7 redirect;
+	rewrite ^/redirect-target-7$ http://integration-testing.open-mpic.org/redirect-target-8 redirect;
+	rewrite ^/redirect-target-8$ http://integration-testing.open-mpic.org/redirect-target-9 redirect;
+	rewrite ^/redirect-target-9$ http://integration-testing.open-mpic.org/redirect-target-10 redirect;
+	rewrite ^/redirect-target-10$ http://integration-testing.open-mpic.org/redirect-target-11 redirect;
+	rewrite ^/redirect-target-11$ http://integration-testing.open-mpic.org/redirect-target-12 redirect;
 }
 
