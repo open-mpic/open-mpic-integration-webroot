@@ -1,1 +1,4 @@
 *.key
+tls-alpn-integration-server/tls.validation.cert
+tls-alpn-integration-server/tls.validation.conf
+tls-alpn-integration-server/tls.validation.csr
