@@ -2,3 +2,6 @@
 tls-alpn-integration-server/tls.validation.cert
 tls-alpn-integration-server/tls.validation.conf
 tls-alpn-integration-server/tls.validation.csr
+tls-alpn-integration-ip-server/tls.validation.cert
+tls-alpn-integration-ip-server/tls.validation.conf
+tls-alpn-integration-ip-server/tls.validation.csr
