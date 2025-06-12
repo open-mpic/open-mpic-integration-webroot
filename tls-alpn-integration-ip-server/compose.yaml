@@ -1,0 +1,13 @@
+services:
+  tls-alpn:
+    build: 
+      context: .
+    restart: always
+    # iptables -t nat -A PREROUTING -i enp1s0 -p tcp --dport 53 -j REDIRECT --to-ports 54
+    # iptables -t nat -A PREROUTING -i enp1s0 -p udp --dport 53 -j REDIRECT --to-ports 54
+    # ufw allow 53
+    # ufw allow 54
+    # docker exec -it open-mpic-integration-auth-dns-bind-auth-1 named-checkzone integration-testing.open-mpic.org /etc/bind/zones/zone.db
+    # docker exec -it open-mpic-integration-auth-dns-bind-auth-1 service named reload
+    ports:
+    - "443:443/tcp"
